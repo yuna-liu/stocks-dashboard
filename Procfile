@@ -1,1 +1,1 @@
-web: gunicorn app_name_without.py:server
+web: gunicorn main:server
