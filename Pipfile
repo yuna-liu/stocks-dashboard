@@ -5,6 +5,10 @@ name = "pypi"
 
 [packages]
 gunicorn = "*"
+pandas = "*"
+dash = "*"
+plotly-express = "*"
+dash-bootstrap-components = "*"
 
 [dev-packages]
 
