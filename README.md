@@ -1,4 +1,7 @@
-# Lecture 5.4 - Dashboard
+# stocks - Dashboard
+
+---
+Stocks: Apple(AAPL), IBM(IBM), Nvidia(NVDA), and Tesla(TSLA) 
 
 Created dashboard with main functionality in place: 
 
@@ -18,53 +21,5 @@ For styling this app we mostly used dash bootstrap components, but also some min
 
 ## Deployment
 
-Deploy on Heroku: 
-
-1. Create account on [Heroku](https://www.heroku.com)
-2. Install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) 
-3. Add this line 
-```py
-server = app.server
-```
-under app = dash.Dash(\_\_name\_\_, ...).
-
-4. If this project is not in a separate repo, with separate pipenv, make sure to create a new repo in Github and clone it. 
-
-5. In this folder you should put all the files in this project and make sure to install all neccessary packages in this projects **pipenv**. 
-
-6. Install gunicorn: 
-
-```py
-pipenv install gunicorn
-```
-
-7. Create a file named Procfile and write this line in it: 
-
-```
-web: gunicorn app_name_without.py:server
-```
-
-
-8. Run these commands to add, commit and push to Github:
-
-```
-git add .
-git commit -m "<your message>"
-git push
-```
-
-9. Add Heroku remote by going in to Heroku deploy and scroll down to "Existing Git repository".
-
-```
-heroku git:remote -a <heroku_project_name>
-heroku ps:scale web=1
-```
-
-10. Push to Heroku:
-
-```
-git push heroku main
-```
-
-11. Enjoy your deployed dashboard app: 
+Deploy dashboard on Heroku app: 
 [https://stocky-dashboard.herokuapp.com/](https://stocky-dashboard.herokuapp.com/)
